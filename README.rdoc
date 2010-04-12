@@ -15,7 +15,7 @@ class Object
 end
 
 # Search method names by textual proximity
->> "FOO".methods.search(:down_case)[0..5]
+>> "FOO".methods.search('down_case')[0..5]
 => ["downcase", "downcase!", "swapcase", "upcase", "concat", "swapcase!"]
 
 # Avoiding NoMethodError on method_missing
