@@ -16,13 +16,13 @@ end
 
 # Search method names by textual proximity
 >> "FOO".methods.search('down_case')[0..5]
-=> ["downcase", "downcase!", "swapcase", "upcase", "concat", "swapcase!"]
+["downcase", "downcase!", "swapcase", "upcase", "concat", "swapcase!"]
 
 # Avoiding NoMethodError on method_missing
 >> %w(a o u i e).sot
 Did you mean Array.sort (yes/no)?
 yes
-=> ["a", "e", "i", "o", "u"]
+["a", "e", "i", "o", "u"]
 
 == Note on Patches/Pull Requests
  
