@@ -5,8 +5,8 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "did-you-mean"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Runtime corrector for misspelled method calls}
+    gem.description = %Q{Did-you-mean compares the misspelled method name with all other method names and suggests the one with closest textual match.}
     gem.email = "leobessa@gmail.com"
     gem.homepage = "http://github.com/leobessa/did-you-mean"
     gem.authors = ["Leonardo Bessa"]
