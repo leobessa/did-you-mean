@@ -9,20 +9,20 @@ Did-you-mean compares the misspelled method name with all other method names and
 == Basic Usage
 
 # First include the module in the Object class
-require 'did-you-mean'
-class Object
-    include DidYouMean
-end
+  require 'did-you-mean'
+  class Object
+      include DidYouMean
+  end
 
 # Search method names by textual proximity
-"FOO".methods.search('down_case')[0..5]
-["downcase", "downcase!", "swapcase", "upcase", "concat", "swapcase!"]
+  "FOO".methods.search('down_case')[0..5]
+  ["downcase", "downcase!", "swapcase", "upcase", "concat", "swapcase!"]
 
 # Avoiding NoMethodError on method_missing
-%w(a o u i e).sot
-Did you mean Array.sort (yes/no)?
-yes
-["a", "e", "i", "o", "u"]
+  %w(a o u i e).sot
+  Did you mean Array.sort (yes/no)?
+  yes
+  ["a", "e", "i", "o", "u"]
 
 == Note on Patches/Pull Requests
  
